@@ -48,14 +48,14 @@ This system sits directly on the server's network interface to parse incoming pr
 
 *   📁 **`rules/`** ── Contains the optimized [local.rules](rules/local.rules) signature criteria file.
 *   📁 **`config/`** ── Contains the hardened [vsftpd.conf](config/vsftpd.conf) data layout.
-*   📄 **[Snort-IDS-Documentation.pdf](Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf)** ── **[REQUIRED READ]** Complete project manual including deep-dive analysis, step-by-step compilation commands, system logs, and security results.
+*   📄 **[Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf](Implementation%20of%20Snort%20IDS%20and%20Detecting%20Brute%20Force%20Attack%20on%20SSH%20and%20FTP.pdf)** ── **[REQUIRED READ]** Complete project manual including deep-dive analysis, step-by-step compilation commands, system logs, and security results.
 *   📄 **`README.md`** ── System landing page and architectural overview.
 
 ## 🚀 Quick Deployment Overview
 The comprehensive, step-by-step compilation guides, library dependencies, user provisioning scripts, and configuration alterations are detailed inside the project manual. 
 
 ### 1. Run the Security Pipeline
-Once configured via the instructions in **[Snort-IDS-Documentation.pdf](Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf)**, initialize the production Intrusion Detection System by pointing Snort to your customized interface:
+Once configured via the instructions in **[Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf](Implementation%20of%20Snort%20IDS%20and%20Detecting%20Brute%20Force%20Attack%20on%20SSH%20and%20FTP.pdf)**, initialize the production Intrusion Detection System by pointing Snort to your customized interface:
 ```bash
 sudo snort -c /usr/local/etc/snort/snort.lua -R /usr/local/etc/snort/rules/local.rules -i enp0s3
 ```
@@ -75,4 +75,4 @@ Monitor the live telemetry stream to verify the signatures successfully caught t
 ```bash
 tail -f /var/log/snort/alert_fast
 ```
-For complete log interpretations, system advantages, and architectural vulnerabilities, please refer directly to the **[Snort-IDS-Documentation.pdf](Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf)** file.
+For complete log interpretations, system advantages, and architectural vulnerabilities, please refer directly to the **[Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf](Implementation%20of%20Snort%20IDS%20and%20Detecting%20Brute%20Force%20Attack%20on%20SSH%20and%20FTP.pdf)** file.
