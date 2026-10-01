@@ -1,0 +1,19 @@
+# SSH Brute Force Detection: Alerts if an IP triggers 5 connection spikes within 60 seconds on port 2222
+alert tcp any any -> any 2222(
+ msg:"SSH Brute Force Attempt";
+ flow:to_server;
+ flags:S;
+ detection_filter:track by_src, count 5, seconds 60;
+ sid:1000001;
+ rev:1;
+)
+
+# FTP Brute Force Detection: Alerts if an IP triggers 5 connection spikes within 60 seconds on port 21
+alert tcp any any -> any 21 (
+ msg:"FTP Brute Force Attack Detected";
+ flags:S;
+ flow:stateless;
+ detection_filter:track by_src,count 5,seconds 60;
+ sid:1000002;
+ rev:1;
+)
