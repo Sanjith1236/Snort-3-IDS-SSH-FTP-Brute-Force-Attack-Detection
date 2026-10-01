@@ -75,4 +75,12 @@ Monitor the live telemetry stream to verify the signatures successfully caught t
 ```bash
 tail -f /var/log/snort/alert_fast
 ```
+
+### 📸 Execution Proof
+Below is the verified output from the live testing laboratory, showing the automated Snort signatures successfully identifying and logging the high-velocity brute-force vectors:
+
+<!-- Place your main detection screenshot here -->
+![Live Snort 3 Brute Force Detection Output](<img width="1920" height="1080" alt="SSH-Brute-Force-Detection" src="https://github.com/user-attachments/assets/e4c21025-cefb-4273-b665-26dff3c845c3" />, <img width="1920" height="1080" alt="FTP-Brute-Force-Detection" src="https://github.com/user-attachments/assets/543b3d43-5b1f-4292-b924-594c76bb24f8" />
+)
+
 For complete log interpretations, system advantages, and architectural vulnerabilities, please refer directly to the **[Implementation of Snort IDS and Detecting Brute Force Attack on SSH and FTP.pdf](Implementation%20of%20Snort%20IDS%20and%20Detecting%20Brute%20Force%20Attack%20on%20SSH%20and%20FTP.pdf)** file.
